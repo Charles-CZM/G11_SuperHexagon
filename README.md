@@ -11,7 +11,7 @@ To run this project:
 5. Generate bitstream file. Vivado should prompt to run synthesis and implementation because they haven’t been run, click “Yes”.
 6. File → Export → Export Hardware.
 7. File → Launch SDK. Vivado SDK should launch.
-8. Create a new application project: File → New → Application Project. Replace the main C file with the provided C file under /src/software/superhexagon.c. You may need to rename it to the recognized file name (e.g. helloworld.c or memorytest.c) by the SDK or add it to the source file tree of the application project.
-9. Make sure the Nexys 4 DDR board is connect to your computer, then programe the FPGA: Xilinx Tools → Program FPGA → click “Program”.
+8. Create a new application project: File → New → Application Project. Replace the main C file with the provided C file under src/software/superhexagon.c. You may need to rename it to the recognized file name by the project (e.g. helloworld.c or memorytest.c) or add it to the source file tree of the project.
+9. Make sure the Nexys 4 DDR board is connected to your computer, then programe the FPGA: Xilinx Tools → Program FPGA → click “Program”.
 10. Compile project: Project → Build Project (or select “Build Automatically” and just save the C file. This will automatically build your project every time you save).
 11. Run project: Run → Run (or ctrl + F11).
