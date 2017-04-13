@@ -11,10 +11,31 @@ Mingqi (Matthew) Hou
 ## Note
 This project requires a Digilent Nexys 4 DDR development board and a PMOD 2-Axis Joystick to run.
 
-## Repository Contents
+## Repository Hierarchy
+The **doc** directory contains design document, demo presentation, and video.
+
 The **src** directory contains all source files needed to compile and run this project. Including the Vivado project and the control software.
 
-The **doc** directory contains design document, demo presentation, and video.
+* resource
+  * start_screen.bmp: Start screen drawing
+  * end_screen.bmp: End screen drawing
+  * bmp2coe.py: Python script used to convert bmp files to coe format.
+* software
+  * superhexagon.c: Main software code
+* superhexagon
+  * superhexagon.xpr: Vivado project file
+  * super_hexagon.ipdefs: Custom IP definitions
+    * hexagon_render_2.0: Render Module (main custom IP for project)
+    * joystick_1.0: Joystick Module
+    * timer_2.0: Timer Module
+  * super_hexagon.srcs: design sources
+    * constrs_1/new/super_hexagon.xdc: Constraint file
+    * sources_1:
+      * start_screen.coe: Start screen memory initialization file
+      * end_screen.coe: End screen memory initialization file
+      * bd/block_system: Block design files
+      * imports/hdl: HDL wrapper file
+
 
 ## How to run
 1. Clone the Git repository (using “git clone”) and pull all contents.
